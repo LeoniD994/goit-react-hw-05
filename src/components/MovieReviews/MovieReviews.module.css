@@ -1,0 +1,19 @@
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.review h3 {
+    margin: 0;
+}
+
+.review p {
+    margin: 10px 0 0;
+}
