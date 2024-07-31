@@ -1,14 +1,40 @@
-.moviesPage {
-    padding: 20px;
-    text-align: center;
+.MoviesPage {
+  padding: 20px;
 }
 
-.searchBar {
-    margin-bottom: 20px;
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  margin-left: 10px;
 }
 
 .movieList {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.movieList li {
+  flex: 1 1 calc(25% - 20px);
+  box-sizing: border-box;
+}
+
+.movieList img {
+  max-width: 100%;
+  height: auto;
+}
+
+.error {
+  color: red;
 }

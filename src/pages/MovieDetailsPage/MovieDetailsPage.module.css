@@ -1,78 +1,35 @@
-.movieDetails {
+.container {
   padding: 20px;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.movieDetails h2 {
-  font-size: 24px;
-  margin-bottom: 16px;
-  color: #343a40;
-}
-
-.movieDetails p {
-  font-size: 16px;
-  color: #6c757d;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-.movieLinks {
-  display: flex;
-  gap: 20px;
-}
-.movieDetails .links {
-  display: flex;
-  gap: 10px;
-}
-
-.movieDetails .links a {
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-  padding: 10px 15px;
-  border: 1px solid #007bff;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.movieDetails .links a:hover {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.movieDetails .backButton {
-  display: inline-block;
-  margin-top: 20px;
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-  padding: 10px 15px;
-  border: 1px solid #007bff;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.movieDetails .backButton:hover {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.error {
-  color: red;
-  font-size: 16px;
-  margin-top: 20px;
-}
 .backButton {
+  display: block;
   margin-bottom: 20px;
-  padding: 5px 10px;
-  background-color: #f0f0f0;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 10px;
+  color: #a06666;
+  text-decoration: none;
 }
 
-.backButton:hover {
-  background-color: #e0e0e0;
+.movieDetails {
+  display: flex;
+}
+
+.poster {
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.info {
+  max-width: 600px;
+}
+
+.additionalInfo {
+  margin-top: 20px;
+}
+
+.link {
+  display: block;
+  margin-bottom: 10px;
+  color: #d63535;
+  text-decoration: none;
 }
