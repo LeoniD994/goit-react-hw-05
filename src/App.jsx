@@ -1,5 +1,6 @@
 import { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import styles from "./App.module.css";
 
 const MovieReviews = lazy(() =>
   import("./components/MovieReviews/MovieReviews")
@@ -16,13 +17,25 @@ const App = () => {
   return (
     <Router>
       <Suspense fallback={<div>Loading page...</div>}>
-        <nav>
+        <nav className={styles.nav}>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link
+                to="/"
+                className={styles.link}
+                activeClassName={styles.activeLink}
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/movies">Movies</Link>
+              <Link
+                to="/movies"
+                className={styles.link}
+                activeClassName={styles.activeLink}
+              >
+                Movies
+              </Link>
             </li>
           </ul>
         </nav>

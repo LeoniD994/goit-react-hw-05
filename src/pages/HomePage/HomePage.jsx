@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import MovieList from "../../components/MovieList/MovieList";
-import "./HomePage.module.css";
+import styles from "./HomePage.module.css";
 
 const HomePage = () => {
   const [movies, setMovies] = useState([]);
@@ -29,7 +29,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <h1>Trending Movies</h1>
+      <h1 className={styles.homeTitle}>Trending Movies</h1>
       <MovieList movies={movies} />
     </div>
   );
