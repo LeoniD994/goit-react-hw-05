@@ -1,5 +1,6 @@
 import { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import styles from "./App.module.css";
 
 const MovieReviews = lazy(() =>
   import("./components/MovieReviews/MovieReviews")
