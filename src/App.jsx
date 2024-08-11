@@ -1,5 +1,6 @@
 import { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import styles from './App.module.css'
 
 const MovieReviews = lazy(() =>
   import("./components/MovieReviews/MovieReviews")
@@ -17,11 +18,11 @@ const App = () => {
     <Router>
       <Suspense fallback={<div>Loading page...</div>}>
         <nav>
-          <ul>
-            <li>
+          <ul className={styles.navList}>
+            <li className={styles.navLink}>
               <Link to="/">Home</Link>
             </li>
-            <li>
+            <li className={styles.navLink}>
               <Link to="/movies">Movies</Link>
             </li>
           </ul>
