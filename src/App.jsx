@@ -28,8 +28,14 @@ const App = () => {
                 Home
               </Link>
             </li>
-            <li className={styles.navLink}>
-              <Link to="/movies">Movies</Link>
+            <li>
+              <Link
+                to="/movies"
+                className={styles.link}
+                activeClassName={styles.activeLink}
+              >
+                Movies
+              </Link>
             </li>
           </ul>
         </nav>
